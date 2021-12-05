@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<title>Document</title>
+
+</head>
+
+<body>
+	<header class="header">
+		<nav class="header_nav">
+			<ul>
+				<li><a href="index.html">Acasa</a></li>
+				<li><a href="Personaje.html">Personaje</a></li>
+				<li><a href="Tematici.html">Tematici</a></li>
+				<li><a href="Melodii.html">Melodii</a></li>
+			
+			</ul>
+		</nav>
+	</header>
+    <main class="page">
+		<!-- The grid: five columns -->
+		<div class="row">
+			<div class="column">
+				<img src="assets/img/Masha1.png" style="border: 10px;margin: 10px" width="220px" height="220px"
+					alt="Masha" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="assets/img/Iepure1.jpg" style="border: 10px;margin: 10px" width="220px" height="220px"
+                 alt="Iepure" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="assets/img/Veverita1.png" style="border: 10px;margin: 10px" width="220px" height="220px"
+					alt="veverita" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="assets/img/Ursul1.png" style="border: 10px;margin: 10px" width="220px" height="220px"
+					alt="ursul" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="assets/img/Lupul1.jpg" style="border: 10px;margin: 10px" width="220px" height="220px"
+					alt="Lupul" onclick="myFunction(this);">
+			</div>
+			<div class="column">
+				<img src="assets/img/Panda1.png"style="border: 10px;margin: 10px" width="220px" height="220px"
+					alt="Panda" onclick="myFunction(this);">
+			</div>
+		</div>
+
+		<!-- The expanding image container -->
+		<div class="container">
+			<!-- Close the image -->
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+			<!-- Expanded image -->
+			<img id="expandedImg" style="width:100%">
+
+			<!-- Image text -->
+			<div id="imgtext"></div>
+		</div>
+		<script> function myFunction(imgs) {
+				// Get the expanded image
+				var expandImg = document.getElementById("expandedImg");
+				// Get the image text
+				var imgText = document.getElementById("imgtext");
+				// Use the same src in the expanded image as the image being clicked on from the grid
+				expandImg.src = imgs.src;
+				// Use the value of the alt attribute of the clickable image as text inside the expanded image
+				imgText.innerHTML = imgs.alt;
+				// Show the container element (hidden with CSS)
+				expandImg.parentElement.style.display = "block";
+			}
+		</script>
+        <body style="background-color: burlywood;">
+            <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: lightcoral;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: maroon;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+    
+            li a:hover {
+                background-color: moccasin;
+            }
+        </style>
+		
+
+     </main>
+   </body>
+
+</html>

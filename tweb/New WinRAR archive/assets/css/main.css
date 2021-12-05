@@ -1,0 +1,132 @@
+/* Container holding the image and the text */
+.container {
+	position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#more {
+	display: none;
+}
+.row {
+	display: flex;
+}
+/* The grid: Five equal columns that floats next to each other */
+.column {
+	padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+	position: relative;
+	display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: lightcoral;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: maroon;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: moccasin;
+}
+
+body {
+	background-color: burlywood;
+}
+
+.text__images {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.text__images img {
+	width: 300px;
+	display: block;
+}
+.text-main {
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	padding: 20px 15px;
+}
+
+.title {
+	font-family: "Ephesis", cursive;
+	font-size: 82px;
+	text-align: center;
+}
+
+.video__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.video__items iframe {
+	margin: 10px;
+}
+
+.title-video {
+	font-size: 24px;
+	font-family: "Inter", sans-serif;
+}
